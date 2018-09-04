@@ -1,13 +1,13 @@
-var Bitcore = require('bitcore-lib-dash');
+var Bitcore = require('bitcore-lib-mue');
 
 var socket;
 var paymentCycle;
 
-var mainnetProvider = 'https://insight.dashevo.org';
-var mainnetPrefix = '/insight-api-dash';
+var mainnetProvider = 'https://explorer.monetaryunit.org';
+var mainnetPrefix = '/insight-api-mue';
 
-var testnetProvider = 'https://testnet-insight.dashevo.org';
-var testnetPrefix = '/insight-api-dash';
+var testnetProvider = 'https://testnet.monetaryunit.org';
+var testnetPrefix = '/insight-api-mue';
 
 var init = function(network, provider, prefix) {
     var gov = new Bitcore.GovObject.Proposal();
