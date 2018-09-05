@@ -11,15 +11,15 @@ function PaymentCycle(gov, provider, prefix) {
     this.provider = provider;
     this.prefix = prefix;
     this.paymentCycle = 64800;
-    this.proposalMaturity = 1662; // ~(60*24*3)/2.6 = about three days
-    this.budgetCycles = 24;
+    this.proposalMaturity = 6480;
+    this.budgetCycles = 120;
 
     this.selectedStartIndex = 0;
     this.selectedPeriods = 1;
 
     if (this.network == 'testnet') this.paymentCycle = 23;
     if (this.network == 'testnet') this.proposalMaturity = 24; // a little more than one hour
-    if (this.network == 'testnet') this.budgetCycles = 99;
+    if (this.network == 'testnet') this.budgetCycles = 90;
 
     this.blockHeight = 0;
 
